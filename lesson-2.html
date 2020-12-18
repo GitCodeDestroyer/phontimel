@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Phontimel</title>
+	<link rel="icon" href="img/icon.svg">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">
+	<script src="js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+	<div class="side-menu">
+		<a href="lessons.html"><label>уроки</label></a>
+		<li>Темы</li>
+		<input type="radio" name="1" id="r3" checked>
+		<input type="radio" name="1" id="r1">
+		<input type="radio" name="1" id="r2">
+		<label for="r1" class="dark">Dark Veyder</label>
+		<label for="r2" class="white">Whity Source</label>
+		<label for="r3" class="black">Black Stone</label>
+	</div>
+	<div class="close"></div>
+	<div class="menu">
+		<a class="link1" href="index.html"><img src="img/logo-3.svg"></a>
+		<div class="main">
+			<a class="fa fa-navicon link2"></a>
+		</div>
+	</div>
+	<div class="instruct">
+		<div class="lesson-view">Урок 2</div>
+		<h2>Заголовки и их война</h2>
+		<p>Отлично! Вы смогли усвоить 1 урок. Теперь вам предстоит узнать о заголовках.</p>
+		<h3>Инструкции</h3>
+		<p>Заголовки нужны для того, чтобы озаглавлять параграфы (<span class="code">&ltp&gt&lt/p&gt</span>), чтобы выделить слово или дать название для последующего текста.</p>
+		<p>Заголовки бывают разных размеров. Например:</p>
+		<div class="code">&lth1&gtзаголовок&lt/h1&gt<br>&lth2&gtзаголовок&lt/h2&gt<br>&lth3&gtзаголовок&lt/h3&gt<br>&lth4&gtзаголовок&lt/h4&gt<br>&lth5&gtзаголовок&lt/h5&gt<br>&lth6&gtзаголовок&lt/h6&gt<br></div>
+		<p>Результат:</p>
+		<div class="code">
+			<h1>заголовок</h1>
+			<h2>заголовок</h2>
+			<h3>заголовок</h3>
+			<h4>заголовок</h4>
+			<h5>заголовок</h5>
+			<h6>заголовок</h6>
+		</div>
+		<h3>Задача</h3>
+		<p>1. Создать тег <span class="code">&lth1&gt&lt/h1&gt</span></p>
+		<p>2. Создать тег <span class="code">&ltp&gt&lt/p&gt</span></p>
+		<p>3. Создать тег <span class="code">&lth2&gt&lt/h2&gt</span></p>
+		<p>4. Создать 2 тега <span class="code">&ltp&gt&lt/p&gt</span></p>
+		<p>5. Написать что-либо в этих тегах (желательно теги пишите на разрых строках)</p>
+	</div>
+	<textarea type="text" class="input"></textarea>
+	<div class="check">
+		<a href="lesson-2.html">Следующий урок</a>
+		<span class="button check-button">Проверить код</span>
+		<span class="button reload-code">Вернуть всё</span>
+		<span class="error">ошибка, пересмотрите код</span>
+	</div>
+	<div class="output"></div>
+	<div class="return"><span class="fa fa-chevron-left"></span></div>
+	<script src="js/main.js"></script>
+	<script src="js/level-2.js"></script>
+	<script>
+		$(".instruct").niceScroll({
+			mousescrollstep: 7,
+			cursorcolor: "#333",
+			cursorwidth: "7px",
+			cursorborderradius: "10px",
+			cursorborder: "none"
+		});
+		$(".input").niceScroll({
+			mousescrollstep: 7,
+			cursorcolor: "#1ded7e",
+			cursorwidth: "7px",
+			cursorborderradius: "10px",
+			cursorborder: "none"
+		});
+	</script>
+</body>
+</html>

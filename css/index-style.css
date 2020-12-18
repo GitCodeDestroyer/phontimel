@@ -1,0 +1,373 @@
+/* #fdfdfd, #1ded7e */
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	list-style: none;
+	transition: all .3s;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-smoothing: antialized;
+	text-size-adjust: 100%;
+	font-family: "RobotoLight";
+}
+
+.fa {
+	color: #1ded7e;
+}
+
+/*** HEADER ***/
+
+.menu {
+	height: 70px;
+	line-height: 65px;
+	padding: 0 2%;
+}
+
+.menu .logo {
+	float: left;
+}
+
+.menu .logo img {
+	height: 60px;
+	margin: 5px 0;
+}
+
+.menu .menu-list {
+	float: right;
+}
+
+.menu .menu-list a {
+	font-size: 20px;
+	margin: 0 10px;
+	display: inline-block;
+	color: #222;
+}
+
+.menu .menu-list a:hover {
+	color: #1ded7e;
+
+}
+
+.menu .logo:hover {
+	opacity: .4;
+}
+
+/*** START ***/
+
+.start {
+	height: 500px;
+	background: url(../img/stars.jpg) no-repeat center 80%;
+	background-size: cover;
+	color: #fff;
+	padding-left: 10%;
+	padding-top: 50px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.start h1 {
+	margin-bottom: 20px;
+	font-size: 50px;
+	text-transform: uppercase;
+}
+
+.start p {
+	font: 30px "RobotoLight";
+	width: 100%;
+}
+
+.start .link-start {
+	margin-top: 50px;
+}
+
+.start a {
+	border-bottom: 3px solid #1f8350;
+	background: #1ded7e;
+	border-radius: 1px;
+	color: #fff;
+	font-size: 20px;
+	padding: 15px 20px;
+	line-height: 70px;
+}
+
+.start a:hover {
+	background: #1fd671;
+}
+
+.start a:active {
+	box-shadow: .5px 7px 20px rgba(0,0,0,.4) inset;
+	border: none;
+}
+
+.start a.link2 {
+	padding: 15px 57px;
+}
+
+.start a.link3 {
+	margin-top: -63px;
+	position: absolute;
+	padding: 28px 40px;
+	margin-left: 10px;
+	font-size: 40px;
+}
+
+.start .right {
+	position: absolute;
+	right: 10%;
+}
+
+.start .right img {
+	height: 300px;
+	margin-top: 50px;
+}
+
+/*** PORTFOLIO ***/
+
+.portfolio h1,
+.about h1,
+.lessons h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 36px;
+	padding: 40px 0;
+	color: #1ded7e;
+}
+
+.portfolio .container {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.portfolio .container .thumb {
+	padding: 15px;
+	width: 32.33333%;
+	display: inline-block;
+	text-align: center;
+	font-size: 20px;
+	margin: 25px auto;
+}
+
+.portfolio .container .thumb .fa {
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+/*** ABOUT ***/
+
+.about {
+	background: #1ded7e;
+	color: #fdfdfd;
+	padding: 0 10%;
+	margin-top: 20px;
+	padding-bottom: 100px;
+	font-size: 17px;
+}
+
+.about .fa {
+	color: #fff;
+	float: right;
+	font-size: 250px;
+	margin-top: -150px;
+}
+
+.about h1 {
+	color: #fff;
+}
+
+.about-align1 {
+	margin: 10px 0;
+	width: 40%;
+	font-size: 22px;
+}
+
+.about-align2 {
+	margin: 10px 0 40px 0;
+	width: 40%;
+	font-size: 22px;
+}
+
+.about a {
+	color: #fff;
+	border: 2px solid #fff;
+	padding: 3px 15px;
+	border-radius: 5px;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+.about a:hover,
+.contact .left-cont a:hover {
+	opacity: .7;
+}
+
+/*** LESSONS ***/
+
+.lessons .container {
+	width: 80%;
+	margin: 0 auto 50px auto;
+	text-align: center;
+}
+
+.lessons .container .fa {
+	font-size: 280px;
+	text-align: center;
+	padding: 1%;
+	border: 5px solid transparent;
+	display: inline-block;
+	width: 49%;
+}
+
+.lessons .container .fa span {
+	font-size: 200px;
+}
+
+.lessons .container a:hover {
+	opacity: .7;
+}
+
+.lessons .container .fa-html5 {
+	padding: 1% 2%;
+}
+
+.lessons .container a span.before-text {
+	font-size: 30px;
+	color: #1ded7e;
+}
+
+.lessons .container .fa .small {
+	font-size: 80px;
+}
+
+.lessons .container .fa-circle-thin {
+	font-size: 80px;
+}
+
+/*** FOOTER ***/
+
+.contact {
+	background: #00FF74;
+	color: #fff;
+	text-align: center;
+	font-size: 25px;
+}
+
+.contact h3 {
+	text-transform: uppercase;
+}
+
+.contact a {
+	color: #fff;
+}
+
+.info {
+	padding: 10px 0;
+}
+
+.left-cont,
+.right-cont {
+	display: inline-block;
+	width: 49%;
+}
+
+.info .fa {
+	border: 2px solid #fff;
+	border-radius: 50%;
+	transition: all 1s;
+	margin: 5px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+}
+
+.info .fa:hover {
+	transform: rotate(360deg);
+}
+
+.copyright {
+	background: #fff;
+	color: #1ded7e;
+	padding: 10px 0;
+}
+
+/*** RESPONSIVE ***/
+
+@media (max-width: 900px) {
+	.start .right {
+		display: none;
+	}	
+}
+
+@media (max-width: 760px) {
+	.lessons .container .fa,
+	.contact .right-cont,
+	.contact .left-cont,
+	.portfolio .container .thumb {
+		width: 100%;
+		margin: 20px 0;
+	}
+}
+
+@media (max-width: 700px) {
+	.about {
+		text-align: center;
+	}
+
+	.about .about-align1,
+	.about .about-align2 {
+		width: 100%;
+		text-align: center;
+	}
+
+	.about .fa,
+	.start a.link2,
+	.start a.link1 {
+		display: none;
+	}
+
+	.start {
+		padding: 0 10%;
+		height: 400px;
+		background-position: 10%;
+	}
+
+	.start h1 {
+		font-size: 30px;
+	}
+
+	.start .left {
+		width: 100%;
+	}
+
+	.start a {
+		text-align: center;
+		width: 100%;
+		display: list-item;
+		padding: 0;
+		margin: 20px 0;
+	}
+	
+	.start a.link3 {
+		padding: 0;
+		font-size: 30px;
+		position: relative;
+		margin: 0;
+	}
+
+	.lessons .container .fa {
+		font-size: 180px;
+	}
+	.lessons .container .fa span {
+		font-size: 80px;
+	}
+}

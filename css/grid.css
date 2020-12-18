@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+.container_12 {
+  font: 300 italic 20px/30px 'Open Sans', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+
+.grid_6,
+.grid_12 {
+  display:inline;
+  float: left;
+  position: relative;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.alpha {
+  margin-left: 0;
+}
+
+.omega {
+  margin-right: 0;
+}
+
+.container_12 .grid_6 {
+  width: 570px;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}

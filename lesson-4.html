@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Phontimel</title>
+	<link rel="icon" href="img/icon.svg">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">
+	<script src="js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+	<div class="side-menu">
+		<a href="lessons.html"><label>уроки</label></a>
+		<li>Темы</li>
+		<input type="radio" name="1" id="r3" checked>
+		<input type="radio" name="1" id="r1">
+		<input type="radio" name="1" id="r2">
+		<label for="r1" class="dark">Dark Veyder</label>
+		<label for="r2" class="white">Whity Source</label>
+		<label for="r3" class="black">Black Stone</label>
+	</div>
+	<div class="close"></div>
+	<div class="menu">
+		<a class="link1" href="index.html"><img src="img/logo-3.svg"></a>
+		<div class="main">
+			<a class="fa fa-navicon link2"></a>
+		</div>
+	</div>
+	<div class="instruct">
+		<div class="lesson-view">Урок 4</div>
+		<h2>Заключение простого</h2>
+		<p>Первый Заключительный урок по спискам, заголовкам и параграфам.</p>
+		<h3>Инструкции</h3>
+		<p>Отлично! Теперь вы будете каждые четыре урока повторять предыдущие уроки. Сейчас вы создадите первый сайт за эти уроки. Будет много разного, и не забывайте про правильный синтекс (2 пробела).</p>
+		<h3>Задача</h3>
+		<p></p>
+	</div>
+	<textarea type="text" class="input"></textarea>
+	<div class="check">
+		<a href="lesson-2.html">Следующий урок</a>
+		<span class="button check-button">Проверить код</span>
+		<span class="button reload-code">Вернуть всё</span>
+		<span class="error">ошибка, пересмотрите код</span>
+	</div>
+	<div class="output"></div>
+	<div class="return"><span class="fa fa-chevron-left"></span></div>
+	<script src="js/main.js"></script>
+	<script src="js/level-4.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script>
+		$(".instruct").niceScroll({
+			mousescrollstep: 7,
+			cursorcolor: "#333",
+			cursorwidth: "7px",
+			cursorborderradius: "10px",
+			cursorborder: "none"
+		});
+		$(".input").niceScroll({
+			mousescrollstep: 7,
+			cursorcolor: "#1ded7e",
+			cursorwidth: "7px",
+			cursorborderradius: "10px",
+			cursorborder: "none"
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Phontimel</title>
+	<link rel="icon" href="img/icon.svg">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">
+	<script src="js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+	<div class="side-menu">
+		<a href="lessons.html"><label>уроки</label></a>
+		<li>Темы</li>
+		<input type="radio" name="1" id="r3" checked>
+		<input type="radio" name="1" id="r1">
+		<input type="radio" name="1" id="r2">
+		<label for="r1" class="dark">Dark Veyder</label>
+		<label for="r2" class="white">Whity Source</label>
+		<label for="r3" class="black">Black Stone</label>
+	</div>
+	<div class="close"></div>
+	<div class="menu">
+		<a class="link1" href="index.html"><img src="img/logo-3.svg"></a>
+		<div class="main">
+			<a class="fa fa-navicon link2"></a>
+		</div>
+	</div>
+	<div class="instruct">
+		<div class="lesson-view">Урок 1</div>
+		<h2>HTML5 & CSS3</h2>
+		<h3>Введение</h3>
+		<p>Единственное, что необходимо для того, чтобы успешно работать в Сети, — научиться говорить на ее специфическом языке: HyperText Markup Language (язык гипертекстовой разметки), или сокращенно HTML.</p>
+		<p> После этого урока вы не только узнаете некоторые базовые понятия HTML, но и сможете разговаривать на этом языке, используя определенный стиль.</p>
+		<p>Определённый стиль - это язык CSS. CSS — это аббревиатура для Cascading Style Sheets (каскадные таблицы стилей).</p> 
+		<p>Мы остановимся на этом более подробно чуть позже, а пока просто знайте, что CSS дает вам возможность описать браузеру внешний вид веб-страниц.</p>
+		<h3>Инструкции</h3>
+		<p>В HTML имеются теги, теги имеют атрибуты, атрибуты имеют своё значение:</p>
+		<p class="code">&ltтег атрибут="значение"&gt текст &lt/тег&gt</p>
+		<p>Большинство тегов закрываются. Но есть и исключения. Например:
+		<span class="code">&ltbr&gt</span> или <span class="code">&ltbr/&gt</span> (этот тег нужен для того, чтобы переносить строки так, как мы захотим).</p>
+		<p>Часто он используется в теге &ltp&gt&lt/p&gt<div class="code">&ltp&gt Lorem &ltbr&gt ipsum &ltbr&gt dolor &ltbr&gt sit &ltbr&gt amet &lt/p&gt</div></p>
+		<p>Результат:</p>
+		<div class="code">Lorem<br> ipsum<br> dolor<br> sit<br> amet</div>
+		<h3>Задача</h3>
+		<p>1. Создать тег <span class="code">&ltp&gt&lt/p&gt</span></p>
+		<p>2. В теге<span class="code"> &ltp&gt&lt/p&gt</span> написать любой текст, например:<br><span class="code"> Hello world!</span></p>
+		<p>3. Используя <span class="code">&ltbr&gt</span> получить результат <div class="code">Hello<br> World!</div></p>
+		<div class="hint"></div>
+	</div>
+	<textarea type="text" class="input"></textarea>
+	<div class="check">
+		<a href="lesson-2.html">Следующий урок</a>
+		<span class="button check-button">Проверить код</span>
+		<span class="button reload-code">Вернуть всё</span>
+		<span class="error">ошибка, пересмотрите код</span>
+	</div>
+	<div class="output"></div>
+	<div class="return"><span class="fa fa-chevron-left"></span></div>
+	<script src="js/main.js"></script>
+	<script src="js/level-1.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script>
+		$(".instruct").niceScroll({
+			mousescrollstep: 7,
+			cursorcolor: "#333",
+			cursorwidth: "7px",
+			cursorborderradius: "10px",
+			cursorborder: "none"
+		});
+		$(".input").niceScroll({
+			mousescrollstep: 7,
+			cursorcolor: "#1ded7e",
+			cursorwidth: "7px",
+			cursorborderradius: "10px",
+			cursorborder: "none"
+		});
+	</script>
+</body>
+</html>

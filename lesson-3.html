@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Phontimel</title>
+	<link rel="icon" href="img/icon.svg">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">
+	<script src="js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+	<div class="side-menu">
+		<a href="lessons.html"><label>уроки</label></a>
+		<li>Темы</li>
+		<input type="radio" name="1" id="r3" checked>
+		<input type="radio" name="1" id="r1">
+		<input type="radio" name="1" id="r2">
+		<label for="r1" class="dark">Dark Veyder</label>
+		<label for="r2" class="white">Whity Source</label>
+		<label for="r3" class="black">Black Stone</label>
+	</div>
+	<div class="close"></div>
+	<div class="menu">
+		<a class="link1" href="index.html"><img src="img/logo-3.svg"></a>
+		<div class="main">
+			<a class="fa fa-navicon link2"></a>
+		</div>
+	</div>
+	<div class="instruct">
+		<div class="lesson-view">Урок 3</div>
+		<h2>"Списочный" Город</h2>
+		<p>Создание списков. Виды списков. Сложная вложенность.</p>
+		<h3>Инструкция</h3>
+		<p>Создание списков на сайте не менее важно. Они нужны для сортировки, выделения и пронумерования.</p>
+		<p>Бывают два типа списков: ненумерованные и нумерованные. Начнём изучение с ненумерованных. Они (<span class="code">&ltli&gt</span>) образуются в теге <span class="code">&ltul&gt</span>. Например: 
+		<div class="code">&ltul&gt<br>
+			<span class="tab"></span>&ltli&gtФрукты&lt/li&gt<br>
+			<span class="tab"></span>&ltli&gtОвощи&lt/li&gt<br>
+			<span class="tab"></span>&ltli&gtЯгоды&lt/li&gt<br>
+			&lt/ul&gt
+		</div></p>
+		<p>Результат:</p>
+		<div class="code">
+			<ul>
+				<li>Фрукты</li>
+				<li>Овощи</li>
+				<li>Ягоды</li>
+			</ul>
+		</div>
+		<p>Бывают нумерованные списки (<span class="code">&ltol&gt</span>):</p>
+		<div class="code">&ltol&gt<br>
+			<span class="tab"></span>&ltli&gtФрукты&lt/li&gt<br>
+			<span class="tab"></span>&ltli&gtОвощи&lt/li&gt<br>
+			<span class="tab"></span>&ltli&gtЯгоды&lt/li&gt<br>
+			&lt/ol&gt
+		</div>
+		<p>Результат:</p>
+		<div class="code">
+			<ol>
+				<li>Фрукты</li>
+				<li>Овощи</li>
+				<li>Ягоды</li>
+			</ol>
+		</div>
+		<p>Если указать в теге <span class="code">&ltli&gt</span> атрибут <span class="code">value=""</span>, приписать числовое значение атрибуту, то этот <span class="code">&ltli&gt</span> будет писаться с указаного числа, а другие последующие <span class="code">&ltli&gt</span> будут увеличиваться на 1:</p>
+		<div class="code">&ltol&gt<br>
+			<span class="tab"></span>&ltli&gtФрукты&lt/li&gt<br>
+			<span class="tab"></span>&ltli value="5"&gtОвощи&lt/li&gt<br>
+			<span class="tab"></span>&ltli&gtЯгоды&lt/li&gt<br>
+			&lt/ol&gt
+		</div>
+		<p>Результат:</p>
+		<div class="code">
+			<ol>
+				<li>Фрукты</li>
+				<li value="5">Овощи</li>
+				<li>Ягоды</li>
+			</ol>
+		</div>
+		<p></p>
+		<div class="code">&ltol reversed&gt<br>
+		<span class="tab"></span>&ltli&gtФрукты&lt/li&gt<br>
+		<span class="tab"></span>&ltli&gtОвощи&lt/li&gt<br>
+		<span class="tab"></span>&ltli&gtЯгоды&lt/li&gt<br>
+		&lt/ol&gt
+		</div>
+		<p>Результат:</p>
+		<div class="code">
+			<ol reversed>
+				<li>Фрукты</li>
+				<li>Овощи</li>
+				<li>Ягоды</li>
+			</ol>
+		</div>
+		<p>Есть типы отметок: i - римские маленькие, I - римские большие, 1 - цифры, A - прописные буквы, a - буквы (eng). На примере мы берём a - буквы:</p>
+		<div class="code">
+			&ltol type="a"&gt<br>
+			<span class="tab"></span>&ltli&gtФрукты&lt/li&gt<br>
+			<span class="tab"></span>&ltli&gtОвощи&lt/li&gt<br>
+			<span class="tab"></span>&ltli&gtЯгоды&lt/li&gt<br>
+			&lt/ol&gt
+		</div>
+		<p>Результат:</p>
+		<div class="code">
+			<ol type="a">
+				<li>Фрукты</li>
+				<li>Овощи</li>
+				<li>Ягоды</li>
+			</ol>
+		</div>
+		<h3>Задача</h3>
+		<!--   <span class="code"></span>   -->
+		<p>1. Создать 1 тег <span class="code">ul</span></p>
+		<p>2. В нём создать 2 тега <span class="code">li</span>.</p>
+		<p>3. Создать в тегах <span class="code">li</span> <span class="code">ol</span> у которых <span class="code">type="I"</span></p>
+		<p>4. Создать в тегах <span class="code">ol</span> 3 тега <span class="code">li</span> и написать что-либо.</p>
+		<p>5. Пишите код на разных строках и отделяйте 2-мя пробелами:</p>
+		<div class="code">
+			&ltol&gt<br>
+			<span class="tab"></span>&ltli&gt<br>
+			<span class="tab"></span><span class="tab"></span>&ltul&gt<br>
+			<span class="tab"></span><span class="tab"></span><span class="tab"></span>&ltli&gtФрукты&lt/li&gt<br>
+			<span class="tab"></span><span class="tab"></span><span class="tab"></span>&ltli&gtОвощи&lt/li&gt<br>
+			<span class="tab"></span><span class="tab"></span><span class="tab"></span>&ltli&gtЯгоды&lt/li&gt<br>
+			<span class="tab"></span><span class="tab"></span>&lt/ul&gt<br>
+			<span class="tab"></span>&lt/li&gt<br>
+			<span class="tab"></span>&ltli&gt<br>
+			<span class="tab"></span><span class="tab"></span>&ltul&gt<br>
+			<span class="tab"></span><span class="tab"></span><span class="tab"></span>&ltli&gtФрукты&lt/li&gt<br>
+			<span class="tab"></span><span class="tab"></span><span class="tab"></span>&ltli&gtОвощи&lt/li&gt<br>
+			<span class="tab"></span><span class="tab"></span><span class="tab"></span>&ltli&gtЯгоды&lt/li&gt<br>
+			<span class="tab"></span><span class="tab"></span>&lt/ul&gt<br>
+			<span class="tab"></span>&lt/li&gt<br>
+			&lt/ol&gt
+		</div>
+	</div>
+	<textarea type="text" class="input"></textarea>
+	<div class="check">
+		<a href="lesson-2.html">Следующий урок</a>
+		<span class="button check-button">Проверить код</span>
+		<span class="button reload-code">Вернуть всё</span>
+		<span class="error">ошибка, пересмотрите код</span>
+	</div>
+	<div class="output"></div>
+	<div class="return"><span class="fa fa-chevron-left"></span></div>
+	<script src="js/main.js"></script>
+	<script src="js/level-3.js"></script>
+	<script>
+		$(".instruct").niceScroll({
+			mousescrollstep: 7,
+			cursorcolor: "#333",
+			cursorwidth: "7px",
+			cursorborderradius: "10px",
+			cursorborder: "none"
+		});
+		$(".input").niceScroll({
+			mousescrollstep: 7,
+			cursorcolor: "#1ded7e",
+			cursorwidth: "7px",
+			cursorborderradius: "10px",
+			cursorborder: "none"
+		});
+	</script>
+</body>
+</html>
